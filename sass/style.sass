@@ -1,0 +1,248 @@
+
+//Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap"
+
+// Redefine Bootstrap color
+$primary-color: #0083c2
+\:root
+   --primary: #{$primary-color}
+
+.bg-primary
+  background-color: #0083c2 !important
+
+.text-primary
+  color: #0083c2 !important
+
+// Redefine basic style
+ul
+  padding: 0
+
+body
+  background-color: #f0ede8
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png")
+  overflow-x: hidden
+  font-family: 'Noto Sans TC', sans-serif
+
+// Special moduel
+.section-heading
+  font-size: 1.6rem
+  letter-spacing: 2px
+  padding: .5rem 35px
+  margin: 2rem 0
+  background: $primary-color
+  display: inline-block
+  border-radius: 5px
+  color: white
+
+.highlighted
+  position: relative
+  letter-spacing: .5rem
+  z-index: 10
+
+  &::before
+    z-index: -1
+    position: absolute
+    content: ''
+    display: block
+    width: 100%
+    bottom: 0
+    left: 0
+    height: 20px
+    background: #dede59
+
+// Navbar
+nav.navbar
+  margin: 0 auto
+  background: var(--primary)
+
+.navbar-brand
+  margin-right: 3rem
+
+.navbar-nav
+  li
+    padding-right: 1rem
+
+// header
+.hero
+  overflow: hidden
+  position: relative
+  margin-top: 90px
+  padding-top: 5rem
+  background: linear-gradient(to bottom, rgba(256, 256, 256, 0) 0%, rgba(256, 256, 256, 0.4) 100%), url("../images/hero.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.hero svg
+  z-index: -100
+  position: absolute
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.2))
+
+//pop-info
+.pop-info .container
+  position: relative
+  margin-top: -5%
+
+.pop-info-box
+  span
+    color: #fcee21
+
+  // Badge
+  &::before
+    content: url('../images/star.svg')
+    position: absolute
+    top: -50px
+    left: -50px
+
+  // Bottom Arrow
+  &::after
+    content: ""
+    display: block
+    width: 0
+    height: 0
+    border-left: 1.5rem solid transparent
+    border-right: 1.5rem solid transparent
+    border-top: 1.5rem solid var(--primary)
+    position: absolute
+    bottom: -1.5rem
+    left: 10%
+
+
+
+//event-info
+.event-info .card-body > h3
+  font-weight: bold
+
+.event-info .card-body > ul
+  line-height: 1.5em
+  list-style-image: url('../images/icon-checked.svg')
+
+
+//event-location
+.event-location
+  padding-bottom: 8rem
+
+//class join
+.event-location .list-group-item
+  background: transparent
+  border: 0
+
+  h4
+    color: var(--primary)
+    font-weight: bold
+    border: 1px solid var(--primary)
+    padding: .2rem .5rem
+    margin-right: 1rem
+    display: inline-block
+
+
+
+//class q-a
+.questions
+  padding: 5rem 0
+
+//footer
+.page-footer
+  border-top: 5px solid var(--light)
+
+.copyright
+  border-top: 1px solid var(--gray)
+
+//
+//bootstrap item overwrite
+//
+
+
+
+//buttons
+
+
+
+// .myButton
+//   -moz-box-shadow: inset 0px 1px 3px 0px #ffffff
+//   -webkit-box-shadow: inset 0px 1px 3px 0px #ffffff
+//   box-shadow: inset 0px 1px 3px 0px #ffffff
+//   background-color: #e22753
+//   -webkit-border-radius: 5px
+//   -moz-border-radius: 5px
+//   border-radius: 5px
+//   border: 1px solid #ffffff
+//   display: inline-block
+//   cursor: pointer
+//   color: #ffffff
+//   font-family: Arial
+//   font-size: 15px
+//   font-weight: bold
+//   padding: 11px 23px
+//   text-decoration: none
+//   text-shadow: 0px -1px 0px #ffffff
+//
+//   &:hover
+//     background-color: #e22753
+//
+//   &:active
+//     position: relative
+//     top: 1px
+//
+//   &:hover
+//     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e22753), color-stop(1, #e22753))
+//     background: -moz-linear-gradient(top, #e22753 5%, #e22753 100%)
+//     background: -webkit-linear-gradient(top, #e22753 5%, #e22753 100%)
+//     background: -o-linear-gradient(top, #e22753 5%, #e22753 100%)
+//     background: -ms-linear-gradient(top, #e22753 5%, #e22753 100%)
+//     background: linear-gradient(to bottom, #e22753 5%, #e22753 100%)
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e22753', endColorstr='#e22753',GradientType=0)
+//     background-color: #e22753
+//
+//   &:active
+//     position: relative
+//     top: 1px
+//   &:hover
+//     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87))
+//     background: -moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%)
+//     background: -webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%)
+//     background: -o-linear-gradient(top, #6c7c7c 5%, #768d87 100%)
+//     background: -ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%)
+//     background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%)
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0)
+//     background-color: #6c7c7c
+//
+//   &:active
+//     position: relative
+//     top: 1px
+
+//cards
+.card
+  background: transparent
+  border: 0
+
+//list group
+
+
+// Card Media Rule
+@media (min-width: 576px)
+  .card-columns
+    column-count: 2
+
+@media (min-width: 768px)
+  .card-columns
+    column-count: 2
+
+@media (min-width: 992px)
+  .card-columns
+    column-count: 2
+
+@media (min-width: 1200px)
+  .card-columns
+    column-count: 2
+
+@media (max-width: 770px)
+    .hero
+      background: none
+
+    .pop-info-box
+      h2
+        font-size: 2rem
+
+      &::before
+        display: none
