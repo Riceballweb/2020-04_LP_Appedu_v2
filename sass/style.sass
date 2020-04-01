@@ -74,8 +74,7 @@ nav.navbar
   background-size: cover
 
 .hero-heading
-  margin: 1.5rem 0
-
+  margin: 1.2rem 0
 
 //pop-info
 .pop-info .container
@@ -113,6 +112,7 @@ nav.navbar
   font-weight: bold
 
 .event-info .card-body > ul
+  display: inline-block
   line-height: 1.5em
   list-style-image: url('../images/icon-checked.svg')
 
@@ -121,19 +121,23 @@ nav.navbar
 .event-location
   padding-bottom: 8rem
 
-//class join
 .event-location .list-group-item
   background: transparent
   border: 0
 
   h4
+    letter-spacing: 2px
     color: var(--primary)
     font-weight: bold
-    border: 1px solid var(--primary)
+    border: 2px solid var(--primary)
     padding: .2rem .5rem
     margin-right: 1rem
     display: inline-block
 
+//event-join
+.signup-form
+  p
+    letter-spacing: 1px
 
 
 //class q-a

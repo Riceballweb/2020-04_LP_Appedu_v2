@@ -7202,7 +7202,7 @@ nav.navbar {
   background-size: cover; }
 
 .hero-heading {
-  margin: 1.5rem 0; }
+  margin: 1.2rem 0; }
 
 .pop-info .container {
   position: relative;
@@ -7233,6 +7233,7 @@ nav.navbar {
   font-weight: bold; }
 
 .event-info .card-body > ul {
+  display: inline-block;
   line-height: 1.5em;
   list-style-image: url("../images/icon-checked.svg"); }
 
@@ -7243,12 +7244,16 @@ nav.navbar {
   background: transparent;
   border: 0; }
   .event-location .list-group-item h4 {
+    letter-spacing: 2px;
     color: var(--primary);
     font-weight: bold;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     padding: .2rem .5rem;
     margin-right: 1rem;
     display: inline-block; }
+
+.signup-form p {
+  letter-spacing: 1px; }
 
 .questions {
   padding: 5rem 0; }
