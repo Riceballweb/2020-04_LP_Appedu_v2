@@ -7234,23 +7234,23 @@ nav.navbar {
 
 .event-info .card-body > ul {
   display: inline-block;
-  line-height: 1.5em;
-  list-style-image: url("../images/icon-checked.svg"); }
+  line-height: 1.7em;
+  list-style-type: none; }
 
 .event-location {
   padding-bottom: 8rem; }
-
-.event-location .list-group-item {
-  background: transparent;
-  border: 0; }
-  .event-location .list-group-item h4 {
-    letter-spacing: 2px;
-    color: var(--primary);
-    font-weight: bold;
-    border: 2px solid var(--primary);
-    padding: .2rem .5rem;
-    margin-right: 1rem;
-    display: inline-block; }
+  .event-location .list-group-item {
+    display: inline;
+    background: transparent;
+    border: 0; }
+    .event-location .list-group-item h4 {
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: bold;
+      border: 2px solid var(--primary);
+      padding: .2rem .5rem;
+      margin-right: 1rem;
+      display: inline-block; }
 
 .signup-form p {
   letter-spacing: 1px; }
@@ -7261,8 +7261,14 @@ nav.navbar {
 .page-footer {
   border-top: 5px solid var(--light); }
 
+.footer-info {
+  font-size: 14px; }
+
 .copyright {
   border-top: 1px solid var(--gray); }
+
+.btn-primary {
+  background-color: var(--primary); }
 
 .card {
   background: transparent;
