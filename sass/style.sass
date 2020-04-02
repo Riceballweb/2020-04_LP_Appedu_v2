@@ -53,6 +53,7 @@ body
 // Navbar
 nav.navbar
   margin: 0 auto
+  background: #0083c2
   background: var(--primary)
 
 .navbar-brand
@@ -62,9 +63,13 @@ nav.navbar
   li
     padding-right: 1rem
 
+  // For IE...
+  a
+    color: white
+
 // header
 .hero
-  min-height: 130vh
+  height: 100vh
   overflow: hidden
   position: relative
   margin-top: 90px
@@ -80,7 +85,7 @@ nav.navbar
 //pop-info
 .pop-info .container
   position: relative
-  margin-top: -5%
+
 
 .pop-info-box
   span
@@ -101,6 +106,7 @@ nav.navbar
     height: 0
     border-left: 1.5rem solid transparent
     border-right: 1.5rem solid transparent
+    border-top: 1.5rem solid #0083c2
     border-top: 1.5rem solid var(--primary)
     position: absolute
     bottom: -1.5rem
@@ -129,8 +135,10 @@ nav.navbar
 
     h4
       letter-spacing: 2px
+      color: #0083c2
       color: var(--primary)
       font-weight: bold
+      border: 2px solid #0083c2
       border: 2px solid var(--primary)
       padding: .2rem .5rem
       margin-right: 1rem
@@ -162,6 +170,7 @@ nav.navbar
 
 //btn
 .btn-primary
+  background-color: #0083c2
   background-color: var(--primary)
 
 //cards
