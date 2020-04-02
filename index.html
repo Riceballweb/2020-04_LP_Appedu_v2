@@ -3,6 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Scroll animation stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Import fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
@@ -33,12 +36,12 @@
     <header class="hero" id="hero">
        <div class="container align-items-stretch min-vh-100">
          <div class="row d-flex align-items-center justify-content-end">
-             <div class="col-lg-5 col-md-5 col-xm-12 text-center text-primary">
+             <div class="col-lg-5 col-md-5 col-xm-12 text-center text-primary wow fadeInUp">
                <h3 class="d-inline highlighted">產業人才培訓<span class="font-italic">350<small>hr</small></span></h3>
                <h1><img src="./images/heroheading.svg" class="img-fluid hero-heading" alt="Hero-Heading"></h1>
                 <img style="margin-left:15px;" src="./images/80to100.svg" class="img-fluid" alt="Responsive image">
                 <br>
-                <button type="button" class="btn btn-danger mt-3 btn-lg btn-block">立即申請</button>
+                <button type="button" class="btn btn-danger mt-3 btn-lg btn-block" href="#event-join">立即申請</button>
 
              </div>
 
@@ -47,7 +50,7 @@
      </header>
 
      <!-- Pop-info -->
-     <section class="pop-info rellax" id="pop-info">
+     <section class="pop-info wow bounceInUp" id="pop-info">
        <div class="container justify-content-center bg-primary text-white shadow-lg rounded py-3">
          <div class="row d-flex justify-content-center">
             <div class="pop-info-box">
@@ -63,7 +66,7 @@
      </section>
 
      <!-- event-info -->
-     <section class="event-info py-5" id="event-info">
+     <section class="event-info py-5 wow fadeInUp" id="event-info">
        <div class="container">
          <div class="row d-flex justify-content-center text-center">
            <h2 class="font-weight-bold section-heading">課綱內容</h2>
@@ -200,7 +203,7 @@
       </section>
 
      <!-- event-location -->
-     <section class="event-location" id="event-location">
+     <section class="event-location wow fadeInUp" id="event-location">
        <div class="container">
          <div class="row d-flex justify-content-center">
            <h2 class="font-weight-bold section-heading">地點時間</h2>
@@ -229,7 +232,7 @@
      </section>
 
      <!-- event-join -->
-     <section class="event-join bg-primary" id="event-join">
+     <section class="event-join bg-primary wow fadeInUp" id="event-join">
        <div class="container">
          <div class="row d-flex align-items-center">
            <div class="col-lg-5">
@@ -285,7 +288,7 @@
      </section>
 
      <!-- Q&A -->
-     <section class="questions" id="questions">
+     <section class="questions wow fadeInUp" id="questions">
        <div class="container">
          <div class="row">
             <div class="col-lg-6 p-3">
@@ -352,7 +355,7 @@
      </section>
 
      <!-- footer -->
-     <footer class="page-footer text-white bg-dark pt-5 pb-2">
+     <footer class="page-footer text-white bg-dark wow fadeInUp pt-5 pb-2">
        <div class="container">
          <div class="row mb-2 d-flex justify-content-center align-items-center text-lg-left text-sm-center">
            <div class="col">
@@ -377,6 +380,12 @@
 
      </footer>
     </body>
+
+    <!-- WOW Scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
