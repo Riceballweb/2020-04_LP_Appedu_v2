@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Tracking code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1694829620628427');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1694829620628427&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- LINE Tag Base Code -->
+    <!-- Do Not Modify -->
+    <script>
+    (function(g,d,o){
+      g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};
+      var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+      var s=d.createElement('script');s.async=1;
+      s.src=o||h+'/n/line_tag/public/release/v1/lt.js';
+      var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+        })(window, document);
+    _lt('init', {
+      customerType: 'lap',
+      tagId: 'a8c14f6a-37c9-45c4-8771-efe71625e2d4'
+    });
+    _lt('send', 'pv', ['a8c14f6a-37c9-45c4-8771-efe71625e2d4']);
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://tr.line.me/tag.gif?c_t=lap&t_id=a8c14f6a-37c9-45c4-8771-efe71625e2d4&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-68890793-1', 'auto');
+            ga('send', 'pageview');
+            </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="./css/style.css" rel="stylesheet">
-
     <!-- Scroll animation stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Import fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>赫綵設計學院—政府補助產業人才培訓</title>
+    <title>政府補助 - 多媒體網頁設計人才培訓｜赫綵設計學院 Appedu Design Institute</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
-
     <!-- Main Navgation -->
     <nav class="navbar navbar-expand-md fixed-top navbar-dark shadow p-3 mb-5 py-3" id="mainNav">
       <div class="container">
@@ -235,75 +296,60 @@
      <!-- event-join -->
      <span class="anchor" id="event-join"></span>
      <section class="event-join bg-primary wow fadeInUp">
-       <div class="container">
+       <div class="container overflow-hidden">
          <div class="row d-flex align-items-center">
            <div class="col-lg-5">
             <img src="./images/reminder.svg" class="img-fluid" alt="Responsive image">
            </div>
 
+           <form class="form-distribution col-lg-7 signup-form col-md-10 mx-auto bg-light shadow-lg mt-5 p-5 mb-n1 rounded">
+              <input name="distribution" type="text" hidden value="4" />
+              <input name="outletSub" type="text" hidden value="213" />
+              <input name="mediaSub" type="text" hidden value="668" />
+               <h2 class="text-center font-weight-bold">限30名！快速卡位報名！</h2>
+               <p class="form__text text-center mt-2">填寫資料，讓專人為你詳細解說政府補助問題。</p>                 <div class="row mt-4">
+                   <div class="col-md-6">
+                     <input type="text" class="form-control" placeholder="真實姓名" name="name" />
+                   </div>
+                   <div class="col-md-6">
+                     <input type="tel" class="form-control" placeholder="聯絡電話" name="cellphone" />
+                   </div>
+                 </div>
+                 <div class="row mt-3">
+                   <div class="col-md-12">
+                     <input type="email" class="form-control" placeholder="電子信箱" name="email" />
+                   </div>
+                 </div>
+                 <div class="row mt-3">
+                   <div class="col-md-6">
+                     <select name="city" class="form-control"> </select>
+                   </div>
+                   <div class="col-md-6">
+                     <select name="area" class="form-control"> </select>
+                   </div>
+                 </div>
+
+                 <div class="row my-3">
+                   <div class="col-md-5 mx-auto text-center">
+                     <div class="form-check">
+                       <label class="form-check-label text-dark">
+                         <input name="agreement" type="checkbox" class="form-check-input" />
+                         我已詳細閱讀並同意<a href="https://www.appedu.com.tw/frame-privacy" target="_blank" class="text-primary"
+                           ><br>隱私權使用條款</a
+                         ></label
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-md-6 mx-auto text-center">
+                     <button class="btn btn-primary btn-lg btn-block" type="submit">確認送出</button>
+                   </div>
+                 </div>
+               </form>
+
            <!-- Join us Form -->
-           <div class="col-lg-7 overflow-hidden signup-form">
-             <div class="col-md-10 mx-auto bg-light shadow-lg mt-5 p-5 mb-n1 rounded">
-                    <h2 class="text-center font-weight-bold">限30名！快速卡位報名！</h2>
-                    <p class="form__text text-center mt-2">填寫資料，讓專人為你詳細解說政府補助問題。</p>
-                    <div class="row mt-4">
-                        <div class="col-md-6 mb-sm-2 mb-1">
-                            <input type="text" class="form-control" placeholder="真實姓名" id="txtName" name="txtName">
-                        </div>
-                        <div class="col-md-6 mb-sm-2">
-                            <input type="tel" class="form-control" placeholder="聯絡電話" id="txtCellPhone" name="txtCellPhone">
-                        </div>
-                    </div>
-                    <div class="row mt-3 my-1">
-                        <div class="col-md-12">
-                            <input type="email" class="form-control" placeholder="電子信箱" id="txtEMail" name="txtEMail">
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6 mb-sm-2 mb-1">
-                            <select id="selLiveCity" name="selLiveCity" class="form-control"><option value="">請選擇縣市</option><option value="1">臺北市</option><option value="2">基隆市</option><option value="3">新北市</option><option value="4">宜蘭縣</option><option value="5">新竹市</option><option value="6">新竹縣</option><option value="7">桃園市</option><option value="8">苗栗縣</option><option value="9">臺中市</option><option value="10">彰化縣</option><option value="11">南投縣</option><option value="12">嘉義市</option><option value="13">嘉義縣</option><option value="14">雲林縣</option><option value="15">臺南市</option><option value="16">高雄市</option><option value="17">澎湖縣</option><option value="18">屏東縣</option><option value="19">臺東縣</option><option value="20">花蓮縣</option><option value="21">金門縣</option><option value="22">連江縣</option></select>
-                        </div>
-                        <div class="col-md-6 mb-sm-2">
-                            <input type="email" class="form-control" placeholder="請輸入地區" id="txtEMail" name="selLiveArea">
-                        </div>
-                    </div>
 
-                    <div class="row my-3">
-                        <div class="col mx-auto text-center">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Provision" required="" value="1">
-                                <label for="Provision" class="form-check-label text-primary">我已詳細閱讀並同意<a href="https://www.appedu.com.tw/frame-privacy" target="_blank">隱私權使用條款</a></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mx-auto text-center">
-                          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ModalSend">
-                            確認送出
-                          </button>
-                          <!-- Popup -->
-                          <div class="modal fade" id="ModalSend" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-
-                                <div class="modal-body p-3">
-                                  <svg class="bi bi-check-box" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                                    <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
-                                  </svg>
-                                  <h2 class="font-weight-bold">完成填單</h2>
-
-                                  感謝您的幫助~我們會盡快與您聯繫。
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                    </div>
-                </div>
-           </div>
          </div>
        </div>
      </section>
@@ -403,13 +449,110 @@
      </footer>
     </body>
 
-    <!-- WOW Scroll animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <!-- Track code -->
+    <!-- Google Tag Manager -->
+            <noscript>
+                <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K56ZZM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-K56ZZM');
+            </script>
+    <!-- End Google Tag Manager -->
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- WOW Scroll animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Bootstrap Essential -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- 引入 jquery.validate -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"
+    integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI="
+    crossorigin="anonymous"
+  ></script>
+<!-- 引入串接腳本 -->
+  <script
+    type="text/javascript"
+    src="https://www.appedu.com.tw/Librarys/Scripts/distribution2020.js"
+    charset="UTF-8"
+  ></script>
+
+  <script>
+  // Wow fadin animation
+  new WOW().init();
+
+  // 需使用 <script> 包起來
+      $(document).ready(function() {
+        var $form = $("form.form-distribution");
+        loadLocation({
+          city: {
+            element: $form.find("[name=city]"),
+            defaultLabel: "請選縣市",
+            errorMessage: "無法載入縣市資料"
+          },
+          area: {
+            element: $form.find("[name=area]"),
+            defaultLabel: "請選地區",
+            errorMessage: "無法載入地區資料"
+          }
+        });
+
+        $form
+          .submit(function(e) {
+            e.preventDefault();
+          })
+          .validate({
+            // debug: true,
+            submitHandler: distributionSubmitHandler({
+              successMessage: "資料已送出，將安排專人與您聯絡",
+              errorMessage: "您輸入的資料有誤或者已輸入過相同資料"
+            }),
+            rules: {
+              name: "required",
+              email: { required: true, email: true },
+              cellphone: { required: true, cellphone: true },
+              city: "required",
+              area: "required",
+              remark: "required",
+              course: "required",
+              agreement: "required"
+            },
+            messages: {
+              name: "請輸入您的姓名",
+              email: {
+                required: "請輸入您的E-mail信箱",
+                email: "請輸入有效的E-mail信箱"
+              },
+              cellphone: {
+                required: "請輸入您的聯絡電話",
+                cellphone: "請輸入有效的聯絡電話"
+              },
+              city: "請選擇縣市",
+              area: "請選擇地區",
+              remark: "請選擇您從哪裡得知資訊",
+              course: "請選擇想學課程",
+              agreement: "您尚未接受隱私權使用條款"
+            }
+          });
+      });
+  </script>
 </html>

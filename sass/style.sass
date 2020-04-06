@@ -2,14 +2,6 @@
 //Import Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap"
 
-.anchor
-  display: block
-  position: relative
-  top: -150px
-  margin-top: 0px
-  visibility: hidden
-
-
 // Redefine Bootstrap color
 $primary-color: #0083c2
 
@@ -21,6 +13,14 @@ $primary-color: #0083c2
 
 .text-primary
   color: #0083c2 !important
+
+// Fix anchor target position
+.anchor
+  display: block
+  position: relative
+  top: -150px
+  margin-top: 0px
+  visibility: hidden
 
 // Redefine basic style
 ul
@@ -158,6 +158,9 @@ nav.navbar
   p
     letter-spacing: 1px
 
+  .error
+    color: #dc3545
+    color: var(--danger)
 
 //class q-a
 .questions
