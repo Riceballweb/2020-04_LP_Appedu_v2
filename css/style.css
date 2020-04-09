@@ -7312,14 +7312,21 @@ nav.navbar {
   .card-columns {
     column-count: 2; } }
 
-@media (max-width: 770px) {
+@media (max-width: 1200px) {
+  .pop-info-box h2 {
+    font-size: 4rem; }
+  .pop-info-box h3 {
+    margin-top: .5rem;
+    display: block !important; } }
+
+@media (max-width: 768px) {
   .hero {
     background: none; }
   .pop-info-box h3 {
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
   .pop-info-box h2 {
-    font-size: 2rem; }
+    font-size: 1.9rem; }
   .pop-info-box .detail {
-    font-size: .9rem; }
+    font-size: .8rem; }
   .pop-info-box::before {
     display: none; } }
