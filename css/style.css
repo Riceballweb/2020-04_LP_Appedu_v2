@@ -7219,8 +7219,11 @@ nav.navbar {
 .pop-info .container {
   position: relative; }
 
-.pop-info-box span {
+.pop-info-box h3 span {
   color: #fcee21; }
+
+.pop-info-box .detail {
+  letter-spacing: 1.8px; }
 
 .pop-info-box::before {
   content: url("../images/star.svg");
@@ -7312,7 +7315,11 @@ nav.navbar {
 @media (max-width: 770px) {
   .hero {
     background: none; }
+  .pop-info-box h3 {
+    font-size: 1.3rem; }
   .pop-info-box h2 {
     font-size: 2rem; }
+  .pop-info-box .detail {
+    font-size: .9rem; }
   .pop-info-box::before {
     display: none; } }
