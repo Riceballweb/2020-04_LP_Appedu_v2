@@ -43,26 +43,14 @@
     <!-- End LINE Tag Base Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162935979-1"></script>
     <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-            ga('create', 'UA-68890793-1', 'auto');
-            ga('send', 'pageview');
-            </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
-
-
+      gtag('config', 'UA-162935979-1');
+    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -303,7 +291,7 @@
             <img src="./images/reminder.svg" class="img-fluid" alt="Responsive image">
            </div>
 
-           <form class="form-distribution col-lg-7 signup-form col-md-10 mx-auto bg-light shadow-lg mt-5 p-5 mb-n1 rounded">
+           <form id="event-form" class="form-distribution col-lg-7 signup-form col-md-10 mx-auto bg-light shadow-lg mt-5 p-5 mb-n1 rounded">
               <input name="distribution" type="text" hidden value="4" />
               <input name="outletSub" type="text" hidden value="213" />
               <input name="mediaSub" type="text" hidden value="668" />
@@ -338,9 +326,7 @@
                        <label class="form-check-label text-dark">
                          <input name="agreement" type="checkbox" class="form-check-input" />
                          我已詳細閱讀並同意<a href="https://www.appedu.com.tw/frame-privacy" target="_blank" class="text-primary"
-                           ><br>隱私權使用條款</a
-                         ></label
-                       >
+                           >隱私權使用條款</a></label>
                      </div>
                    </div>
                  </div>

@@ -100,8 +100,23 @@ function distributionSubmitHandler(options) {
     })
       .done(function(response) {
         if (response.result == "true") {
-          confirm(options.successMessage);
-          top.location.href = "/";
+
+          // gtag.js return
+          gtag('event', <send>, {
+            'event_category': <governmenttraining>,
+            'event_label': <label>,
+            'value': <value>
+          });
+
+          // Call Popup
+          Swal.fire(
+            '完成填單！',
+            (options.successMessage),
+            'success'
+          )
+          window.location.href = "#hero";
+          // Clear event-form
+          $("#event-form")[0].reset();
         } else {
           console.error(response);
           alert("資料送出失敗，請聯絡我們或再試一次");
