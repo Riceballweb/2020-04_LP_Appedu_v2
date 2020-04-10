@@ -102,10 +102,8 @@ function distributionSubmitHandler(options) {
         if (response.result == "true") {
 
           // gtag.js return
-          gtag('event', <send>, {
-            'event_category': <governmenttraining>,
-            'event_label': <label>,
-            'value': <value>
+          gtag('event', 'send', {
+            'event_category': 'governmenttraining',
           });
 
           // Call Popup
