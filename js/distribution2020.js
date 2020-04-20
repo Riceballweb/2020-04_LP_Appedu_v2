@@ -115,6 +115,8 @@ function distributionSubmitHandler(options) {
           window.location.href = "#hero";
           // Clear event-form
           $("#event-form")[0].reset();
+          window.location.replace('https://www.appedu.com.tw/');
+
         } else {
           console.error(response);
           alert("資料送出失敗，請聯絡我們或再試一次");
