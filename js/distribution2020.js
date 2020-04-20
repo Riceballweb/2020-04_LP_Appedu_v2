@@ -111,11 +111,10 @@ function distributionSubmitHandler(options) {
             '完成填單！',
             (options.successMessage),
             'success'
-          )
-          window.location.href = "#hero";
-          // Clear event-form
-          $("#event-form")[0].reset();
-          window.location.replace('https://www.appedu.com.tw/');
+          ).then((result) => {
+            // Reload the Page
+            window.location.replace("https://www.appedu.com.tw/");
+          });
 
         } else {
           console.error(response);
