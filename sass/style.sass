@@ -110,6 +110,7 @@ nav.navbar
     position: absolute
     top: -50px
     left: -50px
+    transform: rotate(-15deg)
 
   // Bottom Arrow
   &::after
@@ -136,10 +137,6 @@ nav.navbar
     display: inline-block
     line-height: 1.7em
     list-style-type: none
-
-//event-location
-.event-location
-  padding-bottom: 8rem
 
   .list-group-item
     display: inline
@@ -178,6 +175,16 @@ nav.navbar
   img
     max-height: 400px
 
+.gift-banner__badge
+  position: relative
+  // Badge
+  &::before
+    transform: rotate(15deg)
+    content: url('../images/star.svg')
+    position: absolute
+    top: -50px
+    right: 50px
+
 .gift-banner__box
   position: relative
   margin: 0 auto
@@ -189,13 +196,12 @@ nav.navbar
 
   h3
     white-space: nowrap
-    padding: 0 2rem
+    padding: .3rem 2rem
     position: absolute
     top: -15%
     left: 50%
     transform: translateX(-50%)
-    background: #343a40
-    background: var(--dark)
+    background: var(--light)
 
   h4
     line-height: 1.5

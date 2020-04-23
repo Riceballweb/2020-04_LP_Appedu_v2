@@ -7229,7 +7229,8 @@ nav.navbar {
   content: url("../images/star.svg");
   position: absolute;
   top: -50px;
-  left: -50px; }
+  left: -50px;
+  transform: rotate(-15deg); }
 
 .pop-info-box::after {
   content: "";
@@ -7252,22 +7253,20 @@ nav.navbar {
   line-height: 1.7em;
   list-style-type: none; }
 
-.event-location {
-  padding-bottom: 8rem; }
-  .event-location .list-group-item {
-    display: inline;
-    background: transparent;
-    border: 0; }
-    .event-location .list-group-item h4 {
-      letter-spacing: 2px;
-      color: #0083c2;
-      color: var(--primary);
-      font-weight: bold;
-      border: 2px solid #0083c2;
-      border: 2px solid var(--primary);
-      padding: .2rem .5rem;
-      margin-right: 1rem;
-      display: inline-block; }
+.event-info .card-body .list-group-item {
+  display: inline;
+  background: transparent;
+  border: 0; }
+  .event-info .card-body .list-group-item h4 {
+    letter-spacing: 2px;
+    color: #0083c2;
+    color: var(--primary);
+    font-weight: bold;
+    border: 2px solid #0083c2;
+    border: 2px solid var(--primary);
+    padding: .2rem .5rem;
+    margin-right: 1rem;
+    display: inline-block; }
 
 .signup-form p {
   letter-spacing: 1px; }
@@ -7285,6 +7284,15 @@ nav.navbar {
   .gift-banner img {
     max-height: 400px; }
 
+.gift-banner__badge {
+  position: relative; }
+  .gift-banner__badge::before {
+    transform: rotate(15deg);
+    content: url("../images/star.svg");
+    position: absolute;
+    top: -50px;
+    right: 50px; }
+
 .gift-banner__box {
   position: relative;
   margin: 0 auto;
@@ -7295,13 +7303,12 @@ nav.navbar {
   border: 2px solid var(--light); }
   .gift-banner__box h3 {
     white-space: nowrap;
-    padding: 0 2rem;
+    padding: .3rem 2rem;
     position: absolute;
     top: -15%;
     left: 50%;
     transform: translateX(-50%);
-    background: #343a40;
-    background: var(--dark); }
+    background: var(--light); }
   .gift-banner__box h4 {
     line-height: 1.5; }
 
