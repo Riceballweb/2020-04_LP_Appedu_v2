@@ -7366,5 +7366,7 @@ nav.navbar {
     font-size: .8rem; }
   .pop-info-box::before {
     display: none; }
+  .gift-banner {
+    padding: 1rem 0; }
   ::before {
     display: none; } }
