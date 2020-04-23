@@ -191,8 +191,8 @@ nav.navbar
   margin-top: 3rem
   padding: 2rem
   max-width: 400px
-  border: 2px solid #f8f9fa
-  border: 2px solid var(--light)
+  border: 3px solid #f8f9fa
+  border: 3px solid var(--light)
 
   h3
     white-space: nowrap
@@ -268,18 +268,24 @@ nav.navbar
 
 // If < 768px
 @media (max-width: 768px)
-    .hero
-      background: none
+  .hero
+    background: none
 
-    .pop-info-box
-      h3
-        font-size: 1.2rem
+  .pop-info-box
+    h3
+      font-size: 1.2rem
 
-      h2
-        font-size: 1.9rem
+    h2
+      font-size: 1.9rem
 
-      .detail
-        font-size: .8rem
+    .detail
+      font-size: .8rem
 
-      &::before
-        display: none
+    &::before
+      display: none
+
+  .gift-banner__badge
+
+
+  &::before
+    display: none
